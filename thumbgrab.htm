@@ -2,6 +2,9 @@
 <head>
   <title>YVTG</title>
   <script type="text/javascript">
+  function setFocusToTextBox(){
+      document.getElementById("tb").focus();
+  }
     function enter (intext) {
       var outurl = 'https://img.youtube.com/vi/'+intext.replace('https://www.youtube.com/watch?v=', '').replace('https://youtu.be/','').replace('http://www.youtube.com/watch?v=', '').replace('http://youtu.be/','')+'/maxresdefault.jpg';
       document.getElementById('outimg').src = outurl;
@@ -9,13 +12,13 @@
     }
   </script>
 </head>
-<body>
+<body onload="setFocusToTextBox()">
   <p>
     <div>Input a video url or ID</div>
     <input type="text" id="tb" onkeyup="if (event.keyCode == 13)
                         document.getElementById('buttonenter').click()">
    <input type="button" value="Get thumb" onclick="enter(tb.value)" id="buttonenter">
    <img id="outimg" width="300">
- <p>
+   <p>
 </body>
 </html>
