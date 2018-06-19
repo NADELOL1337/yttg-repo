@@ -1,0 +1,20 @@
+<html>
+<head>
+  <script type="text/javascript">
+    function buttnonclick (gfg) {
+      var outt = 'https://img.youtube.com/vi/'+gfg.replace('https://www.youtube.com/watch?v=', '').replace('https://youtu.be/','').replace('http://www.youtube.com/watch?v=', '').replace('http://youtu.be/','')+'/maxresdefault.jpg';
+      document.getElementById('outimg').src = outt;
+      // alert(outt);
+    }
+  </script>
+</head>
+<body>
+  <p>
+    <div>Input a video url or ID</div>
+    <input type="text"  id="bunn" onkeyup="if (event.keyCode == 13)
+                        document.getElementById('buttan').click()">
+   <input type="button" value="Кнопка" onclick="buttnonclick(bunn.value)" id="buttan">
+   <img id="outimg" width="300">
+ <p>
+</body>
+</html>
