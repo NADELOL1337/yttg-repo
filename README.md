@@ -1,1 +1,2 @@
-# ytthumbgrab-repo
+# YTTG
+YouTube Thumb Grabber.
