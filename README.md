@@ -1,5 +1,3 @@
 # YTTG
 YouTube Thumb Grabber.
-* [RawGit](#raw-git)
-
-# <a name="raw-git"></a>
+[RawGit](https://rawgit.com/NADELOL1337/ytthumbgrab-repo/master/thumbgrab.htm)
